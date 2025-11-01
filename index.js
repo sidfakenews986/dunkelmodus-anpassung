@@ -28,4 +28,14 @@ const toggleDarkMode = () => {
     }
 };
 
+const checkInitialDarkMode = () => {
+    if (localStorage.getItem('darkMode') === null) {
+        localStorage.setItem('darkMode', 'disabled');
+    } else if (localStorage.getItem('darkMode') === 'enabled') {
+        activateDarkMode();
+    }
+};
+
+checkInitialDarkMode();
+
 export { activateDarkMode, deactivateDarkMode, toggleDarkMode };
