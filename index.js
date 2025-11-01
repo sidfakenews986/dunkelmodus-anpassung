@@ -1,8 +1,8 @@
 const activateDarkMode = () => {
     const darkModeStyles = {
-        background: '#121212',
+        backgroundColor: '#121212',
         color: '#FFFFFF',
-        // Weitere Anpassungen können hier vorgenommen werden
+        // Further adjustments can be made here
     };
 
     Object.assign(document.body.style, darkModeStyles);
@@ -11,7 +11,7 @@ const activateDarkMode = () => {
 
 const deactivateDarkMode = () => {
     const lightModeStyles = {
-        background: '#FFFFFF',
+        backgroundColor: '#FFFFFF',
         color: '#000000',
     };
 
