@@ -28,7 +28,7 @@ const toggleDarkMode = () => {
     }
 };
 
-const checkInitialDarkMode = () => {
+const initializeDarkMode = () => {
     if (localStorage.getItem('darkMode') === null) {
         localStorage.setItem('darkMode', 'disabled');
     } else if (localStorage.getItem('darkMode') === 'enabled') {
@@ -36,6 +36,6 @@ const checkInitialDarkMode = () => {
     }
 };
 
-checkInitialDarkMode();
+initializeDarkMode();
 
 export { activateDarkMode, deactivateDarkMode, toggleDarkMode };
